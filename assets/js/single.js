@@ -19,6 +19,7 @@ var getRepoIssues = function (repo) {
     }
   });
 };
+
 var getRepoName = function () {
   var queryString = document.location.search;
   var repoName = queryString.split("=")[1];
@@ -30,6 +31,7 @@ var getRepoName = function () {
     document.location.replace("./index.html");
   }
 };
+
 var displayIssues = function (issues) {
   if (issues.length === 0) {
     issueContainerEl.classList = "list-item  align-center";
